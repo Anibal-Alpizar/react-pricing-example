@@ -15,7 +15,7 @@ function App() {
       <sidebar
         className={`bg-[#1E1F24] fixed ${
           showMenu ? "-left-0" : "-left-full"
-        } lg:left-0 w-72 h-full p-8 flex flex-col justify-between transition-all`}
+        } lg:left-0 w-72 h-full p-8 flex flex-col justify-between transition-all z-50`}
       >
         <div>
           <Logo />

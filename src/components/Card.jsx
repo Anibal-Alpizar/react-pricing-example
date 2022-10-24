@@ -3,8 +3,8 @@ import { RiCheckFill } from "react-icons/ri";
 function Card(props) {
   return (
     <div>
-      <div className="bg-[#1E1F24]">
-        <div className="flex flex-col items-center">
+      <div className="bg-[#1E1F24] p-12 rounded-xl mb-10">
+        <div className="flex flex-col items-center mb-20">
           {props.icon}
           <h2 className="text-4xl">{props.plan}</h2>
           <p className="text-gray-500 mb-4">{props.description}</p>
@@ -16,15 +16,22 @@ function Card(props) {
             Current plan
           </button>
         </div>
-        <ul>
-            {props.details.map((map)=>{
-                
-            })}
-
-           
-
-
-          
+        <ul className="flex flex-col gap-4 to-gray-500">
+          <li className="flex items-center gap-4">
+            <RiCheckFill className="text-green-500 text-2xl" /> {props.details}
+          </li>
+          <li className="flex items-center gap-4">
+            <RiCheckFill className="text-green-500 text-2xl" /> {props.details}
+          </li>
+          <li className="flex items-center gap-4">
+            <RiCheckFill className="text-green-500 text-2xl" /> {props.details}
+          </li>
+          <li className="flex items-center gap-4">
+            <RiCheckFill className="text-green-500 text-2xl" /> {props.details}
+          </li>
+          <li className="flex items-center gap-4">
+            <RiCheckFill className="text-green-500 text-2xl" /> {props.details}
+          </li>
         </ul>
       </div>
     </div>

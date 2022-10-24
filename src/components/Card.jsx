@@ -3,7 +3,7 @@ import { RiCheckFill } from "react-icons/ri";
 function Card(props) {
   return (
     <div>
-      <div className="bg-[#1E1F24] p-12 rounded-xl mb-10">
+      <div className={`${props.color} "p-12 rounded-xl mb-10>`}>
         <div className="flex flex-col items-center mb-20">
           {props.icon}
           <h2 className="text-4xl">{props.plan}</h2>
